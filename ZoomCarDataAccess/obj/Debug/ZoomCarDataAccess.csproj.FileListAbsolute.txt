@@ -1,0 +1,12 @@
+D:\Pavithra\WebAPIProjects\ZoomCarApplication\ZoomCarDataAccess\bin\Debug\ZoomCarDataAccess.dll.config
+D:\Pavithra\WebAPIProjects\ZoomCarApplication\ZoomCarDataAccess\bin\Debug\ZoomCarDataAccess.dll
+D:\Pavithra\WebAPIProjects\ZoomCarApplication\ZoomCarDataAccess\bin\Debug\ZoomCarDataAccess.pdb
+D:\Pavithra\WebAPIProjects\ZoomCarApplication\ZoomCarDataAccess\bin\Debug\EntityFramework.dll
+D:\Pavithra\WebAPIProjects\ZoomCarApplication\ZoomCarDataAccess\bin\Debug\EntityFramework.SqlServer.dll
+D:\Pavithra\WebAPIProjects\ZoomCarApplication\ZoomCarDataAccess\bin\Debug\EntityFramework.xml
+D:\Pavithra\WebAPIProjects\ZoomCarApplication\ZoomCarDataAccess\bin\Debug\EntityFramework.SqlServer.xml
+D:\Pavithra\WebAPIProjects\ZoomCarApplication\ZoomCarDataAccess\obj\Debug\ZoomCarDataAccess.csproj.AssemblyReference.cache
+D:\Pavithra\WebAPIProjects\ZoomCarApplication\ZoomCarDataAccess\obj\Debug\ZoomCarDataAccess.csproj.CoreCompileInputs.cache
+D:\Pavithra\WebAPIProjects\ZoomCarApplication\ZoomCarDataAccess\obj\Debug\ZoomCarDataAccess.csproj.CopyComplete
+D:\Pavithra\WebAPIProjects\ZoomCarApplication\ZoomCarDataAccess\obj\Debug\ZoomCarDataAccess.dll
+D:\Pavithra\WebAPIProjects\ZoomCarApplication\ZoomCarDataAccess\obj\Debug\ZoomCarDataAccess.pdb
