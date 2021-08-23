@@ -7,6 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZoomCarApplication", "ZoomC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZoomCarDataAccess", "ZoomCarDataAccess\ZoomCarDataAccess.csproj", "{D5F3B3D8-BBE5-466A-AC20-CD13A7DFC4BB}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DBScripts", "DBScripts", "{7F3F25D2-7645-4389-A809-C992C81EBBD7}"
+	ProjectSection(SolutionItems) = preProject
+		CarDetails.sql = CarDetails.sql
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
