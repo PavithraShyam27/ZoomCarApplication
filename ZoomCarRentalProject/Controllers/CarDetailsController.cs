@@ -92,7 +92,7 @@ namespace ZoomCarRentalProject.Controllers
             try
             {
                 ServicesRepository servicesobj = new ServicesRepository();
-                HttpResponseMessage Response = servicesobj.DeleteResponse("/api/CarDetails?" + id.ToString());
+                HttpResponseMessage Response = servicesobj.DeleteResponse("/api/CarDetails?id=" + id.ToString());
                 Response.EnsureSuccessStatusCode();
                 return RedirectToAction("GetCarDetails");
             }
