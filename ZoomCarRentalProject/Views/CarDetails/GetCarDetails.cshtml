@@ -1,0 +1,46 @@
+﻿@model IEnumerable<ZoomCarRentalProject.Models.CarDetails>
+
+   @{ 
+        ViewBag.Title = "All Car Details";
+    }
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    
+</head>
+<body>
+    <h3 style="text-align:center">Car Registration</h3>
+    <div>
+        <table class="CarDetailsTable" style="width:100%">
+            <tr style="width:100%">
+                <th style="width:10%; font-size:large; font-family:'Times New Roman', Times, serif">@Html.DisplayNameFor(model => model.ID)</th>
+                <th style="width:20%">@Html.DisplayNameFor(model => model.CarModel)</th>
+                <th style="width:20%">@Html.DisplayNameFor(model => model.CarNo)</th>
+                <th style="width:20%">@Html.DisplayNameFor(model => model.NoOfSeats)</th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr style="width:100%">
+                    <td style="width:10%">@Html.DisplayFor(modelitem => item.ID)</td>
+                    <td style="width:20%">@Html.DisplayFor(modelitem => item.CarModel)</td>
+                    <td style="width:20%">@Html.DisplayFor(modelitem => item.CarNo)</td>
+                    <td style="width:20%">@Html.DisplayFor(modelitem => item.NoOfSeats)</td>
+                    <td style="width:15%">@Html.ActionLink("Edit", "UpdateCarDetails", new { Id = item.ID })</td>
+                    <td style="width:15%">@Html.ActionLink("Delete", "DeleteCarDetails", new { Id = item.ID })</td>
+                </tr>
+            }
+
+        </table>
+    </div>
+    <hr />
+    <div>
+        <p>@Html.ActionLink("Create Car Details", "CreateCarDetails")</p>
+    </div>
+
+</body>
+</html>

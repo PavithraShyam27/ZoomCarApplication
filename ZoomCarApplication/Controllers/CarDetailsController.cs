@@ -6,34 +6,37 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using ZoomCarDataAccess;
+using ZoomCarApplication.Models;
 
 namespace ZoomCarApplication.Controllers
 {
     public class CarDetailsController : ApiController
     {
-        public IEnumerable<CarDetails> Get()
+        [HttpGet]
+        public IEnumerable<CarDetails> GetCarDetails()
         {
-            using (CarDetailsDBEntities entities = new CarDetailsDBEntities())
+            using (DataAccessEntities entities = new DataAccessEntities())
             {
-               return entities.CarDetails.ToList();
+               return entities.CarDetails.ToList(); ;
             }
                        
         }
 
-        public CarDetails Get(int id)
+        [HttpGet]
+        public CarDetails GetCarDetails(int id)
         {
-            using (CarDetailsDBEntities entities = new CarDetailsDBEntities())
+            using (DataAccessEntities entities = new DataAccessEntities())
             {
                 return entities.CarDetails.FirstOrDefault(i => i.ID == id);
             }
         }
 
-        public HttpResponseMessage Post([FromBody] CarDetails cardetails)
+        [HttpPost]
+        public HttpResponseMessage InsertCarDetails([FromBody] CarDetails cardetails)
         {
             try
             {
-                using (CarDetailsDBEntities entities = new CarDetailsDBEntities())
+                using (DataAccessEntities entities = new DataAccessEntities())
                 {
                     entities.CarDetails.Add(cardetails);
                     entities.SaveChanges();
@@ -47,17 +50,18 @@ namespace ZoomCarApplication.Controllers
             
         }
 
-        public HttpResponseMessage Put(int id,[FromBody] CarDetails UpdateCarDetails)
+        [HttpPut]
+        public HttpResponseMessage UpdateCarDetails([FromBody] CarDetails UpdateCarDetails)
         {
             try
             {
-                using (CarDetailsDBEntities entities = new CarDetailsDBEntities())
+                using (DataAccessEntities entities = new DataAccessEntities())
                 {
-                    var Changesdetails = entities.CarDetails.FirstOrDefault(i => i.ID == id);
+                    var Changesdetails = entities.CarDetails.FirstOrDefault(i => i.ID == UpdateCarDetails.ID);
 
                     if (Changesdetails == null)
                     {
-                        return Request.CreateErrorResponse(HttpStatusCode.NotFound, "The given id " + id.ToString() + " is not found");
+                        return Request.CreateErrorResponse(HttpStatusCode.NotFound, "The given id " + UpdateCarDetails.ID.ToString() + " is not found");
                     }
                     else
                     {
@@ -65,7 +69,7 @@ namespace ZoomCarApplication.Controllers
                         Changesdetails.CarNo = UpdateCarDetails.CarNo;
                         Changesdetails.NoOfSeats = UpdateCarDetails.NoOfSeats;
                         entities.SaveChanges();
-                        return Request.CreateResponse(HttpStatusCode.OK, "The given id " + id.ToString() + " is updated successfully");
+                        return Request.CreateResponse(HttpStatusCode.OK, "The given id " + UpdateCarDetails.ID.ToString() + " is updated successfully");
                     }
                 }
             }
@@ -76,9 +80,10 @@ namespace ZoomCarApplication.Controllers
             
         }
 
-        public HttpResponseMessage Delete (int id)
+        [HttpDelete]
+        public HttpResponseMessage DeleteCarDetails (int id)
         {
-            using(CarDetailsDBEntities entities = new CarDetailsDBEntities())
+            using(DataAccessEntities entities = new DataAccessEntities())
             {
                 var entity = entities.CarDetails.FirstOrDefault(i => i.ID == id);
 

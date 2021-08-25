@@ -1,0 +1,17 @@
+﻿.customdiv{
+    margin:10px;
+    text-align:center;
+    font-size:large;
+}
+
+.customheader {
+    margin: 30px;
+    min-height: 100px;
+    font-style: italic;
+    text-align: center;
+    text-decoration-color: #00FF00;
+}
+
+.customtextbox{
+
+}

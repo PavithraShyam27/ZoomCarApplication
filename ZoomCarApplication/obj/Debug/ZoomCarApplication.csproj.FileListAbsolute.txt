@@ -159,9 +159,6 @@ D:\Pavithra\ZoomWebApplications\ZoomCarApplication\bin\System.Web.WebPages.Deplo
 D:\Pavithra\ZoomWebApplications\ZoomCarApplication\bin\System.Web.WebPages.dll
 D:\Pavithra\ZoomWebApplications\ZoomCarApplication\bin\System.Web.WebPages.Razor.dll
 D:\Pavithra\ZoomWebApplications\ZoomCarApplication\bin\WebGrease.dll
-D:\Pavithra\ZoomWebApplications\ZoomCarApplication\bin\ZoomCarDataAccess.dll
-D:\Pavithra\ZoomWebApplications\ZoomCarApplication\bin\ZoomCarDataAccess.pdb
-D:\Pavithra\ZoomWebApplications\ZoomCarApplication\bin\ZoomCarDataAccess.dll.config
 D:\Pavithra\ZoomWebApplications\ZoomCarApplication\bin\EntityFramework.xml
 D:\Pavithra\ZoomWebApplications\ZoomCarApplication\bin\EntityFramework.SqlServer.xml
 D:\Pavithra\ZoomWebApplications\ZoomCarApplication\bin\Newtonsoft.Json.xml

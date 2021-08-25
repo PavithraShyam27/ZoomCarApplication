@@ -5,12 +5,12 @@ VisualStudioVersion = 16.0.31613.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZoomCarApplication", "ZoomCarApplication\ZoomCarApplication.csproj", "{6648C723-DD99-4E27-9CB6-0A4D0BF74E4D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZoomCarDataAccess", "ZoomCarDataAccess\ZoomCarDataAccess.csproj", "{D5F3B3D8-BBE5-466A-AC20-CD13A7DFC4BB}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DBScripts", "DBScripts", "{7F3F25D2-7645-4389-A809-C992C81EBBD7}"
 	ProjectSection(SolutionItems) = preProject
 		CarDetails.sql = CarDetails.sql
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZoomCarRentalProject", "ZoomCarRentalProject\ZoomCarRentalProject.csproj", "{BDC13796-D7B7-4F07-91EB-52782A711631}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,10 +22,10 @@ Global
 		{6648C723-DD99-4E27-9CB6-0A4D0BF74E4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6648C723-DD99-4E27-9CB6-0A4D0BF74E4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6648C723-DD99-4E27-9CB6-0A4D0BF74E4D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D5F3B3D8-BBE5-466A-AC20-CD13A7DFC4BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D5F3B3D8-BBE5-466A-AC20-CD13A7DFC4BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D5F3B3D8-BBE5-466A-AC20-CD13A7DFC4BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D5F3B3D8-BBE5-466A-AC20-CD13A7DFC4BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDC13796-D7B7-4F07-91EB-52782A711631}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDC13796-D7B7-4F07-91EB-52782A711631}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDC13796-D7B7-4F07-91EB-52782A711631}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDC13796-D7B7-4F07-91EB-52782A711631}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
